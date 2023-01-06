@@ -1,7 +1,7 @@
 """Added user to TextLabels
 
 Revision ID: 20cd871f4ec7
-Revises: d4161e384f83
+Revises: 3b0adfadbef9
 Create Date: 2023-01-05 17:45:15.696468
 
 """
