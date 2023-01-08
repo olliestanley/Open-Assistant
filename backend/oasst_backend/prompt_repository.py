@@ -26,6 +26,20 @@ class PromptRepository:
         self.user_id = self.user.id if self.user else None
         self.journal = JournalWriter(db, api_client, self.user)
 
+    def query_frontend_users(
+        self,
+        api_client_id: Optional[UUID] = None,
+        max_count: int = 10,
+        ge: Optional[str] = None,
+        lt: Optional[str] = None,
+        auth_method: Optional[str] = None,
+    ) -> list[protocol_schema.User]:
+        """
+        Query frontend users.
+        """
+
+    pass
+
     def lookup_user(self, client_user: protocol_schema.User) -> Optional[User]:
         if not client_user:
             return None
